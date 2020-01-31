@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23CBC8EF23E3C4CD0053CC5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBC8EE23E3C4CD0053CC5F /* AppDelegate.swift */; };
+		23CBC8F123E3C4CD0053CC5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBC8F023E3C4CD0053CC5F /* SceneDelegate.swift */; };
+		23CBC8F323E3C4CD0053CC5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBC8F223E3C4CD0053CC5F /* ViewController.swift */; };
+		23CBC8F623E3C4CD0053CC5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CBC8F423E3C4CD0053CC5F /* Main.storyboard */; };
+		23CBC8F823E3C4CF0053CC5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CBC8F723E3C4CF0053CC5F /* Assets.xcassets */; };
+		23CBC8FB23E3C4CF0053CC5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CBC8F923E3C4CF0053CC5F /* LaunchScreen.storyboard */; };
+		23CBC90623E3C4D00053CC5F /* Pony_ExpressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBC90523E3C4D00053CC5F /* Pony_ExpressTests.swift */; };
+		23CBC91123E3C4D00053CC5F /* Pony_ExpressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBC91023E3C4D00053CC5F /* Pony_ExpressUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23CBC90223E3C4D00053CC5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23CBC8E323E3C4CD0053CC5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23CBC8EA23E3C4CD0053CC5F;
+			remoteInfo = "Pony-Express";
+		};
+		23CBC90D23E3C4D00053CC5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23CBC8E323E3C4CD0053CC5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23CBC8EA23E3C4CD0053CC5F;
+			remoteInfo = "Pony-Express";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23CBC8EB23E3C4CD0053CC5F /* Pony-Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pony-Express.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CBC8EE23E3C4CD0053CC5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23CBC8F023E3C4CD0053CC5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		23CBC8F223E3C4CD0053CC5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23CBC8F523E3C4CD0053CC5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23CBC8F723E3C4CF0053CC5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23CBC8FA23E3C4CF0053CC5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23CBC8FC23E3C4CF0053CC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CBC90123E3C4D00053CC5F /* Pony-ExpressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pony-ExpressTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CBC90523E3C4D00053CC5F /* Pony_ExpressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pony_ExpressTests.swift; sourceTree = "<group>"; };
+		23CBC90723E3C4D00053CC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CBC90C23E3C4D00053CC5F /* Pony-ExpressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pony-ExpressUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CBC91023E3C4D00053CC5F /* Pony_ExpressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pony_ExpressUITests.swift; sourceTree = "<group>"; };
+		23CBC91223E3C4D00053CC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23CBC8E823E3C4CD0053CC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CBC8FE23E3C4D00053CC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CBC90923E3C4D00053CC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23CBC8E223E3C4CD0053CC5F = {
+			isa = PBXGroup;
+			children = (
+				23CBC8ED23E3C4CD0053CC5F /* Pony-Express */,
+				23CBC90423E3C4D00053CC5F /* Pony-ExpressTests */,
+				23CBC90F23E3C4D00053CC5F /* Pony-ExpressUITests */,
+				23CBC8EC23E3C4CD0053CC5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23CBC8EC23E3C4CD0053CC5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23CBC8EB23E3C4CD0053CC5F /* Pony-Express.app */,
+				23CBC90123E3C4D00053CC5F /* Pony-ExpressTests.xctest */,
+				23CBC90C23E3C4D00053CC5F /* Pony-ExpressUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23CBC8ED23E3C4CD0053CC5F /* Pony-Express */ = {
+			isa = PBXGroup;
+			children = (
+				23CBC8EE23E3C4CD0053CC5F /* AppDelegate.swift */,
+				23CBC8F023E3C4CD0053CC5F /* SceneDelegate.swift */,
+				23CBC8F223E3C4CD0053CC5F /* ViewController.swift */,
+				23CBC8F423E3C4CD0053CC5F /* Main.storyboard */,
+				23CBC8F723E3C4CF0053CC5F /* Assets.xcassets */,
+				23CBC8F923E3C4CF0053CC5F /* LaunchScreen.storyboard */,
+				23CBC8FC23E3C4CF0053CC5F /* Info.plist */,
+			);
+			path = "Pony-Express";
+			sourceTree = "<group>";
+		};
+		23CBC90423E3C4D00053CC5F /* Pony-ExpressTests */ = {
+			isa = PBXGroup;
+			children = (
+				23CBC90523E3C4D00053CC5F /* Pony_ExpressTests.swift */,
+				23CBC90723E3C4D00053CC5F /* Info.plist */,
+			);
+			path = "Pony-ExpressTests";
+			sourceTree = "<group>";
+		};
+		23CBC90F23E3C4D00053CC5F /* Pony-ExpressUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23CBC91023E3C4D00053CC5F /* Pony_ExpressUITests.swift */,
+				23CBC91223E3C4D00053CC5F /* Info.plist */,
+			);
+			path = "Pony-ExpressUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23CBC8EA23E3C4CD0053CC5F /* Pony-Express */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23CBC91523E3C4D00053CC5F /* Build configuration list for PBXNativeTarget "Pony-Express" */;
+			buildPhases = (
+				23CBC8E723E3C4CD0053CC5F /* Sources */,
+				23CBC8E823E3C4CD0053CC5F /* Frameworks */,
+				23CBC8E923E3C4CD0053CC5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pony-Express";
+			productName = "Pony-Express";
+			productReference = 23CBC8EB23E3C4CD0053CC5F /* Pony-Express.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23CBC90023E3C4D00053CC5F /* Pony-ExpressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23CBC91823E3C4D00053CC5F /* Build configuration list for PBXNativeTarget "Pony-ExpressTests" */;
+			buildPhases = (
+				23CBC8FD23E3C4D00053CC5F /* Sources */,
+				23CBC8FE23E3C4D00053CC5F /* Frameworks */,
+				23CBC8FF23E3C4D00053CC5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23CBC90323E3C4D00053CC5F /* PBXTargetDependency */,
+			);
+			name = "Pony-ExpressTests";
+			productName = "Pony-ExpressTests";
+			productReference = 23CBC90123E3C4D00053CC5F /* Pony-ExpressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23CBC90B23E3C4D00053CC5F /* Pony-ExpressUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23CBC91B23E3C4D00053CC5F /* Build configuration list for PBXNativeTarget "Pony-ExpressUITests" */;
+			buildPhases = (
+				23CBC90823E3C4D00053CC5F /* Sources */,
+				23CBC90923E3C4D00053CC5F /* Frameworks */,
+				23CBC90A23E3C4D00053CC5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23CBC90E23E3C4D00053CC5F /* PBXTargetDependency */,
+			);
+			name = "Pony-ExpressUITests";
+			productName = "Pony-ExpressUITests";
+			productReference = 23CBC90C23E3C4D00053CC5F /* Pony-ExpressUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23CBC8E323E3C4CD0053CC5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Josh Dinges";
+				TargetAttributes = {
+					23CBC8EA23E3C4CD0053CC5F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					23CBC90023E3C4D00053CC5F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 23CBC8EA23E3C4CD0053CC5F;
+					};
+					23CBC90B23E3C4D00053CC5F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 23CBC8EA23E3C4CD0053CC5F;
+					};
+				};
+			};
+			buildConfigurationList = 23CBC8E623E3C4CD0053CC5F /* Build configuration list for PBXProject "Pony-Express" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23CBC8E223E3C4CD0053CC5F;
+			productRefGroup = 23CBC8EC23E3C4CD0053CC5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23CBC8EA23E3C4CD0053CC5F /* Pony-Express */,
+				23CBC90023E3C4D00053CC5F /* Pony-ExpressTests */,
+				23CBC90B23E3C4D00053CC5F /* Pony-ExpressUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23CBC8E923E3C4CD0053CC5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CBC8FB23E3C4CF0053CC5F /* LaunchScreen.storyboard in Resources */,
+				23CBC8F823E3C4CF0053CC5F /* Assets.xcassets in Resources */,
+				23CBC8F623E3C4CD0053CC5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CBC8FF23E3C4D00053CC5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CBC90A23E3C4D00053CC5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23CBC8E723E3C4CD0053CC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CBC8F323E3C4CD0053CC5F /* ViewController.swift in Sources */,
+				23CBC8EF23E3C4CD0053CC5F /* AppDelegate.swift in Sources */,
+				23CBC8F123E3C4CD0053CC5F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CBC8FD23E3C4D00053CC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CBC90623E3C4D00053CC5F /* Pony_ExpressTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CBC90823E3C4D00053CC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CBC91123E3C4D00053CC5F /* Pony_ExpressUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23CBC90323E3C4D00053CC5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23CBC8EA23E3C4CD0053CC5F /* Pony-Express */;
+			targetProxy = 23CBC90223E3C4D00053CC5F /* PBXContainerItemProxy */;
+		};
+		23CBC90E23E3C4D00053CC5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23CBC8EA23E3C4CD0053CC5F /* Pony-Express */;
+			targetProxy = 23CBC90D23E3C4D00053CC5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23CBC8F423E3C4CD0053CC5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23CBC8F523E3C4CD0053CC5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23CBC8F923E3C4CF0053CC5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23CBC8FA23E3C4CF0053CC5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23CBC91323E3C4D00053CC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23CBC91423E3C4D00053CC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23CBC91623E3C4D00053CC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pony-Express/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "R11-Studios.Pony-Express";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23CBC91723E3C4D00053CC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pony-Express/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "R11-Studios.Pony-Express";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23CBC91923E3C4D00053CC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pony-ExpressTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "R11-Studios.Pony-ExpressTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pony-Express.app/Pony-Express";
+			};
+			name = Debug;
+		};
+		23CBC91A23E3C4D00053CC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pony-ExpressTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "R11-Studios.Pony-ExpressTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pony-Express.app/Pony-Express";
+			};
+			name = Release;
+		};
+		23CBC91C23E3C4D00053CC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pony-ExpressUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "R11-Studios.Pony-ExpressUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pony-Express";
+			};
+			name = Debug;
+		};
+		23CBC91D23E3C4D00053CC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pony-ExpressUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "R11-Studios.Pony-ExpressUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pony-Express";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23CBC8E623E3C4CD0053CC5F /* Build configuration list for PBXProject "Pony-Express" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CBC91323E3C4D00053CC5F /* Debug */,
+				23CBC91423E3C4D00053CC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23CBC91523E3C4D00053CC5F /* Build configuration list for PBXNativeTarget "Pony-Express" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CBC91623E3C4D00053CC5F /* Debug */,
+				23CBC91723E3C4D00053CC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23CBC91823E3C4D00053CC5F /* Build configuration list for PBXNativeTarget "Pony-ExpressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CBC91923E3C4D00053CC5F /* Debug */,
+				23CBC91A23E3C4D00053CC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23CBC91B23E3C4D00053CC5F /* Build configuration list for PBXNativeTarget "Pony-ExpressUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CBC91C23E3C4D00053CC5F /* Debug */,
+				23CBC91D23E3C4D00053CC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23CBC8E323E3C4CD0053CC5F /* Project object */;
+}
