@@ -8,12 +8,25 @@
 
 import UIKit
 
+protocol PackageDelegate: AnyObject {
+    func createNewPackage(_ package: Package)
+}
+
 final class PackagesViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
 
     private(set) var packages = [
         Package(trackingNumber: "abc123", carrier: "FedEx", description: "Sample Package")
-    ]
+    ] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let createPackageNavigationViewController = segue.destination as? UINavigationController, let createPackageViewController = createPackageNavigationViewController.viewControllers.first as? CreatePackageViewController else { return }
+        createPackageViewController.packageDelegate = self
+    }
 }
 
 extension PackagesViewController: UITableViewDataSource {
@@ -28,5 +41,11 @@ extension PackagesViewController: UITableViewDataSource {
         let package = packages[indexPath.row]
         packageCell.package = package
         return packageCell
+    }
+}
+
+extension PackagesViewController: PackageDelegate {
+    func createNewPackage(_ package: Package) {
+        packages.append(package)
     }
 }

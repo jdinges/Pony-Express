@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2346BB7C24C3BB3A000A2110 /* CreatePackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2346BB7B24C3BB3A000A2110 /* CreatePackageViewController.swift */; };
+		2346BB7E24C423AA000A2110 /* CreatePackage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2346BB7D24C423AA000A2110 /* CreatePackage.storyboard */; };
 		2385478E24C11B6900E10EE5 /* PackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2385478D24C11B6900E10EE5 /* PackagesViewController.swift */; };
 		2385479124C124AB00E10EE5 /* UITableViewCell+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2385479024C124AB00E10EE5 /* UITableViewCell+Exts.swift */; };
 		2385479624C127A700E10EE5 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2385479524C127A700E10EE5 /* Package.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2346BB7B24C3BB3A000A2110 /* CreatePackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePackageViewController.swift; sourceTree = "<group>"; };
+		2346BB7D24C423AA000A2110 /* CreatePackage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreatePackage.storyboard; sourceTree = "<group>"; };
 		2385478D24C11B6900E10EE5 /* PackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesViewController.swift; sourceTree = "<group>"; };
 		2385479024C124AB00E10EE5 /* UITableViewCell+Exts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Exts.swift"; sourceTree = "<group>"; };
 		2385479524C127A700E10EE5 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				2385478D24C11B6900E10EE5 /* PackagesViewController.swift */,
+				2346BB7B24C3BB3A000A2110 /* CreatePackageViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			children = (
 				23CBC8F923E3C4CF0053CC5F /* LaunchScreen.storyboard */,
 				23CBC8F423E3C4CD0053CC5F /* Main.storyboard */,
+				2346BB7D24C423AA000A2110 /* CreatePackage.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 				23CBC8FB23E3C4CF0053CC5F /* LaunchScreen.storyboard in Resources */,
 				23CBC8F823E3C4CF0053CC5F /* Assets.xcassets in Resources */,
 				23CBC8F623E3C4CD0053CC5F /* Main.storyboard in Resources */,
+				2346BB7E24C423AA000A2110 /* CreatePackage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +318,7 @@
 				23CBC8EF23E3C4CD0053CC5F /* AppDelegate.swift in Sources */,
 				2385479624C127A700E10EE5 /* Package.swift in Sources */,
 				2385479124C124AB00E10EE5 /* UITableViewCell+Exts.swift in Sources */,
+				2346BB7C24C3BB3A000A2110 /* CreatePackageViewController.swift in Sources */,
 				2385478E24C11B6900E10EE5 /* PackagesViewController.swift in Sources */,
 				2385479924C127ED00E10EE5 /* PackageCell.swift in Sources */,
 				23CBC8F123E3C4CD0053CC5F /* SceneDelegate.swift in Sources */,
