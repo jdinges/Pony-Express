@@ -72,11 +72,22 @@ extension CreatePackageViewController: UITextFieldDelegate {
         case self.carrierTextField:
             packageTextField.becomeFirstResponder()
         case self.packageTextField:
-            packageTextField.resignFirstResponder()
+            if !(trackingNumberTextField.text?.isEmpty ?? true) && !(carrierTextField.text?.isEmpty ?? true) {
+                packageTextField.resignFirstResponder()
+            } else if trackingNumberTextField.text?.isEmpty ?? true {
+                trackingNumberTextField.becomeFirstResponder()
+            } else if carrierTextField.text?.isEmpty ?? true {
+                carrierTextField.becomeFirstResponder()
+            }
         default:
             print("something went wrong")
             return false
         }
+
+        if package.isValid {
+            saveAction(self)
+        }
+
         return true
     }
 }

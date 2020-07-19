@@ -33,7 +33,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter tracking number" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="LQB-K3-WLy">
                                                         <rect key="frame" x="0.0" y="28.5" width="288" height="22"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="continue" enablesReturnKeyAutomatically="YES" smartDashesType="no"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="jZD-8m-D1V" id="zKe-uD-LXH"/>
                                                         </connections>
@@ -52,7 +52,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select package carrier" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9ef-Rd-um3">
                                                         <rect key="frame" x="0.0" y="28.5" width="288" height="22"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" returnKeyType="continue" enablesReturnKeyAutomatically="YES" smartDashesType="no" textContentType="organization"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" textContentType="organization"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="jZD-8m-D1V" id="BC6-cw-8NS"/>
                                                         </connections>
@@ -71,7 +71,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Describe package" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="a85-fm-XMo">
                                                         <rect key="frame" x="0.0" y="28.5" width="288" height="22"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" textContentType="name"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" textContentType="name"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="jZD-8m-D1V" id="Odw-6Y-qKD"/>
                                                         </connections>
@@ -118,6 +118,7 @@
                         <outlet property="carrierTextField" destination="9ef-Rd-um3" id="nqw-eB-fWD"/>
                         <outlet property="packageLabel" destination="W4X-eB-gnG" id="Tm1-PX-Vnd"/>
                         <outlet property="packageTextField" destination="a85-fm-XMo" id="PnI-NF-gtU"/>
+                        <outlet property="saveButton" destination="YuV-Jb-hW3" id="4fW-j7-BC6"/>
                         <outlet property="trackingNumberLabel" destination="KNf-cF-bWr" id="nla-nD-ADc"/>
                         <outlet property="trackingNumberTextField" destination="LQB-K3-WLy" id="UXV-CU-RDF"/>
                     </connections>
