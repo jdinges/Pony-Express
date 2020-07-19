@@ -28,6 +28,7 @@ final class CreatePackageViewController: UIViewController {
         super.viewDidLoad()
 
         saveButton.isEnabled = false
+        trackingNumberTextField.becomeFirstResponder()
     }
 
     @IBAction func saveAction(_ sender: Any) {
