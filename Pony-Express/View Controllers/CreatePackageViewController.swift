@@ -23,12 +23,19 @@ final class CreatePackageViewController: UIViewController {
             saveButton.isEnabled = package.isValid
         }
     }
+    private var previouslySelectedCarrier: Carrier?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         saveButton.isEnabled = false
         trackingNumberTextField.becomeFirstResponder()
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let carriersViewController = segue.destination as? CarriersViewController else { return }
+        carriersViewController.carrierDelegate = self
+        carriersViewController.previouslySelectedCarrier = previouslySelectedCarrier
     }
 
     @IBAction func saveAction(_ sender: Any) {
@@ -46,7 +53,30 @@ final class CreatePackageViewController: UIViewController {
     }
 }
 
+extension CreatePackageViewController: CarrierDelegate {
+    func selectCarrier(_ carrier: Carrier) {
+        package.carrier = carrier.rawValue
+        carrierTextField.text = carrier.rawValue
+        previouslySelectedCarrier = carrier
+        navigationController?.popViewController(animated: true)
+        guard textFieldShouldReturn(carrierTextField) else { return }
+        textFieldDidEndEditing(carrierTextField)
+    }
+}
+
 extension CreatePackageViewController: UITextFieldDelegate {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        guard textField == carrierTextField else { return true }
+        performSegue(withIdentifier: "carrierSelect", sender: self)
+        return false
+    }
+
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        guard textField == carrierTextField else { return true }
+        previouslySelectedCarrier = nil
+        return true
+    }
+
     func textFieldDidEndEditing(_ textField: UITextField) {
         switch textField {
         case self.trackingNumberTextField:
@@ -66,29 +96,16 @@ extension CreatePackageViewController: UITextFieldDelegate {
         }
     }
 
+    private func determineNextResponder() -> UITextField? {
+        guard !(trackingNumberTextField.text?.isEmpty ?? true) else { return trackingNumberTextField }
+        guard !(carrierTextField.text?.isEmpty ?? true) else { return carrierTextField }
+        guard !(packageTextField.text?.isEmpty ?? true) else { return packageTextField }
+        return nil
+    }
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        switch textField {
-        case self.trackingNumberTextField:
-            carrierTextField.becomeFirstResponder()
-        case self.carrierTextField:
-            packageTextField.becomeFirstResponder()
-        case self.packageTextField:
-            if !(trackingNumberTextField.text?.isEmpty ?? true) && !(carrierTextField.text?.isEmpty ?? true) {
-                packageTextField.resignFirstResponder()
-            } else if trackingNumberTextField.text?.isEmpty ?? true {
-                trackingNumberTextField.becomeFirstResponder()
-            } else if carrierTextField.text?.isEmpty ?? true {
-                carrierTextField.becomeFirstResponder()
-            }
-        default:
-            print("something went wrong")
-            return false
-        }
-
-        if package.isValid {
-            saveAction(self)
-        }
-
+        guard let nextTextField = determineNextResponder() else { view.endEditing(true) ; return true }
+        nextTextField.becomeFirstResponder()
         return true
     }
 }
