@@ -11,18 +11,18 @@ import Foundation
 struct Package {
     var trackingNumber: String
     var carrier: String
-    var description: String?
+    var description: String
 
-    static let empty = Package(trackingNumber: "", carrier: "", description: nil)
+    static let empty = Package(trackingNumber: "", carrier: "", description: "")
 
-    init(trackingNumber: String, carrier: String, description: String? = nil) {
+    init(trackingNumber: String, carrier: String, description: String) {
         self.trackingNumber = trackingNumber
         self.carrier = carrier
         self.description = description
     }
 
     var isValid: Bool {
-        !trackingNumber.isEmpty && !carrier.isEmpty
+        !trackingNumber.isEmpty && !carrier.isEmpty && !description.isEmpty
     }
 
     var errors: String {
@@ -33,6 +33,10 @@ struct Package {
 
         if carrier.isEmpty {
             errorMessages.append("Carrier is not present or is empty")
+        }
+
+        if description.isEmpty {
+            errorMessages.append("Description is not present or is empty")
         }
 
         return errorMessages.joined(separator: ". ")

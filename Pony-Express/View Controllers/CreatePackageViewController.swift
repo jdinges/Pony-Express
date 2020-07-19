@@ -15,9 +15,20 @@ final class CreatePackageViewController: UIViewController {
     @IBOutlet private var carrierTextField: UITextField!
     @IBOutlet private var packageLabel: UILabel!
     @IBOutlet private var packageTextField: UITextField!
+    @IBOutlet private var saveButton: UIBarButtonItem!
 
     var packageDelegate: PackageDelegate?
-    private(set) var package = Package.empty
+    private(set) var package = Package.empty {
+        didSet {
+            saveButton.isEnabled = package.isValid
+        }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        saveButton.isEnabled = false
+    }
 
     @IBAction func saveAction(_ sender: Any) {
         guard let packageDelegate = packageDelegate else { return }
