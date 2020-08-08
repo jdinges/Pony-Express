@@ -13,11 +13,17 @@ final class PackageCell: UITableViewCell {
     @IBOutlet private var carrierLabel: UILabel!
     @IBOutlet private var descriptionLabel: UILabel!
 
-    var package = Package.empty {
+    var package = PackageObject.empty {
         didSet {
             trackingNumberLabel.text = package.trackingNumber
             carrierLabel.text = package.carrier
             descriptionLabel.text = package.description
         }
+    }
+
+    func setUp(trackingNumber: String? = nil, carrier: String? = nil, description: String? = nil) {
+        trackingNumberLabel.text = trackingNumber
+        carrierLabel.text = carrier
+        descriptionLabel.text = description
     }
 }

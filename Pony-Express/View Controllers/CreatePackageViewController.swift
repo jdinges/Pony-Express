@@ -18,7 +18,7 @@ final class CreatePackageViewController: UIViewController {
     @IBOutlet private var saveButton: UIBarButtonItem!
 
     var packageDelegate: PackageDelegate?
-    private(set) var package = Package.empty {
+    private(set) var package = PackageObject.empty {
         didSet {
             saveButton.isEnabled = package.isValid
         }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Courier" representedClassName="Courier" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="packages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Package"/>
+    </entity>
+    <entity name="Package" representedClassName="Package" syncable="YES" codeGenerationType="class">
+        <attribute name="courier" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="tracking_number" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Package" positionX="-63" positionY="-18" width="128" height="28"/>
+        <element name="Courier" positionX="-54" positionY="18" width="128" height="88"/>
+    </elements>
+</model>

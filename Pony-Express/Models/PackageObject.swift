@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct Package {
+struct PackageObject {
     var trackingNumber: String
     var carrier: String
     var description: String
 
-    static let empty = Package(trackingNumber: "", carrier: "", description: "")
+    static let empty = PackageObject(trackingNumber: "", carrier: "", description: "")
 
     init(trackingNumber: String, carrier: String, description: String) {
         self.trackingNumber = trackingNumber
